@@ -10,8 +10,8 @@ const port = 3000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static('public')); // Menyajikan file frontend statis
-
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'public'))); // Menyajikan file frontend statis
 // Inisialisasi Gemini SDK
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
