@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NusaBot - Premium Travel AI</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-slider">
+        <div class="bg-slide active" style="background-image: url('bromo.png')"></div>
+        <div class="bg-slide" style="background-image: url('bali.png')"></div>
+        <div class="bg-slide" style="background-image: url('raja_ampat.png')"></div>
+        <div class="bg-slide" style="background-image: url('borobudur.png')"></div>
+        <div class="bg-slide" style="background-image: url('komodo.png')"></div>
+        <div class="bg-slide" style="background-image: url('rinjani.png')"></div>
+        <div class="bg-slide" style="background-image: url('prambanan.png')"></div>
+        <div class="bg-slide" style="background-image: url('toba.png')"></div>
+        <div class="bg-slide" style="background-image: url('nusa_penida.png')"></div>
+        <div class="bg-slide" style="background-image: url('gili.png')"></div>
+        <div class="bg-slide" style="background-image: url('waerebo.png')"></div>
+        <div class="bg-slide" style="background-image: url('ijen.png')"></div>
+        <div class="bg-slide" style="background-image: url('belitung.png')"></div>
+        <div class="bg-overlay"></div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-content">
+                <i class="fa-solid fa-plane-departure header-icon"></i>
+                <div>
+                    <h2>NusaBot Travel</h2>
+                    <p>Premium Travel Assistant</p>
+                </div>
+            </div>
+            <div class="header-status">
+                <div class="status-text"><span class="status-dot"></span> Online</div>
+                <img src="avatar.png" alt="Customer Service" class="header-avatar">
+            </div>
+        </div>
+        
+        <div id="chat-box">
+            <div class="message bot-message slide-up">
+                <div class="avatar"><img src="avatar.png" alt="CS"></div>
+                <div class="text">Halo! Saya NusaBot, asisten travel eksklusif Anda. Destinasi eksotis mana yang ingin Anda jelajahi hari ini?</div>
+            </div>
+        </div>
+
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Ketik rencana liburan Anda..." autocomplete="off" required />
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
